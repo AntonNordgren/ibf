@@ -7,19 +7,26 @@ import {
 } from 'react-router-dom';
 
 import Home from './components/home'
-import About from './components/about'
+import Team from './components/team'
+import Pictures from './components/pictures'
 import NotFound from './components/notFound'
+
+import NavigationBar from './components/NavigationBar'
 
 import './App.css';
 
+import 'bootswatch/dist/simplex/bootstrap.min.css';
+
 export default function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <Router>
+        <NavigationBar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route component={NotFound} />
+          <Route path="/laget" component={Team} />
+          <Route path="/bilder" component={Pictures} />
+          <Route component={Home} />
         </Switch>
       </Router>
     </div>
