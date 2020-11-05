@@ -23,10 +23,10 @@ export default function NavigationBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="">
             <Nav.Link><Link to="/laget">LAGET</Link></Nav.Link>
+            <Nav.Link><Link to="/serie">SERIE</Link></Nav.Link>
+            <Nav.Link><Link to="/stats">STATS</Link></Nav.Link>
             <Nav.Link><Link to="/kalender">KALENDER</Link></Nav.Link>
-            <Nav.Link><Link to="/serie">SERIER</Link></Nav.Link>
             <Nav.Link><Link to="/bilder">BILDER</Link></Nav.Link>
-            <Nav.Link><Link to="/kontakt">KONTAKT</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

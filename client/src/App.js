@@ -7,15 +7,14 @@ import {
 } from 'react-router-dom';
 
 import Home from './components/home'
+import Stats from './components/stats'
 import Team from './components/team'
-import Pictures from './components/pictures'
 import NotFound from './components/notFound'
+import Player from './components/player'
 
 import NavigationBar from './components/NavigationBar'
 
 import './App.css';
-
-import 'bootswatch/dist/simplex/bootstrap.min.css';
 
 export default function App() {
   return (
@@ -24,8 +23,9 @@ export default function App() {
         <NavigationBar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/laget" component={Team} />
-          <Route path="/bilder" component={Pictures} />
+          <Route exact path="/stats" component={Stats} />
+          <Route exact path="/laget" component={Team} />
+          <Route path="/laget/:id" component={Player} />
           <Route component={Home} />
         </Switch>
       </Router>
